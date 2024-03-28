@@ -8,17 +8,20 @@ models that used the Auto Smooth from previous Blender versions, because the aut
 imported and any "Auto Smooth" objects are shaded entirely smooth (save for manually-Sharp-marked edges).
 
 This addon functions as a converter or full-file processor, to "apply" the Auto Smooth setting to all affected meshes--
-applying "Mark Sharp" and "Clear Sharp" accordingly-- so the result looks the same when importing into Blender 4.1.
+applying "Mark Sharp" and "Clear Sharp" accordingly-- so the result will look the same when importing into Blender 4.1.
 
-This addon is only meant for use in Blender 3.x and 4.0, as Blender 4.1 and later has the "Shade Smooth By Angle"
-operation that does the same thing. It will not function in Blender versions 4.1 or later.
+This addon is meant to be run in Blender 3.x, and it is only meant for use in Blender 3.x and 4.0, as Blender 4.1 and
+later lacks the Auto Smooth feature entirely, but has the "Shade Smooth By Angle" operation that does the same thing
+this does. This addon will not operate in Blender versions 4.1 or later.
 
 ## Features
 
-* **Apply Auto-Smoothing (to File)** - Apply auto-smoothing to all meshes in the file.
-* **Apply Auto-Smoothing (to Object)** - Apply auto-smoothing to the mesh(es) associated with the selected object.
-  * Includes the recursive contents of Collection Instances and instanced children (only instanced children, not all children)
-  * ⚠️ Keep in mind: if other objects or scenes use the same mesh(es), they will be the same in all instances.
+* **Mark Sharps on File** - Apply auto-smoothing to all meshes in the file.
+* **Mark Sharps on Selected Objects** - Apply auto-smoothing to the mesh(es) associated with the selected object.
+  * Includes the recursive contents of Collection Instances and instanced children (only instanced children, not all
+    children)
+  * ⚠️ Keep in mind that this works on the Mesh level, not the Object level. If other objects or scenes use the same
+    meshes, they will be similarly updated in all instances.
 
 ## To install
 
