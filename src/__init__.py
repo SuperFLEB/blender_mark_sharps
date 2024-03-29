@@ -16,13 +16,13 @@ _LOADED = True
 package_name = __package__
 
 # Supports 3.x or 4.0 only, nothing past 4.0
-is_supported_blender_version = bpy.app.version[0] <= 3 or (bpy.app.version[1] == 4 and bpy.app.version[2] == 0)
+is_supported_blender_version = bpy.app.version[0] <= 3 or (bpy.app.version[0] == 4 and bpy.app.version[1] == 0)
 
 bl_info = {
     "name": "Mark Sharps",
     "description": "Mark sharp edges created by the \"Auto Smooth\" option",
     "author": "FLEB (a.k.a. SuperFLEB)",
-    "version": (0, 1, 0),
+    "version": (0, 1, 1),
     "blender": (3, 6, 0),
     "location": "View3D > Object",
     "warning": "For use in Blender 3.x/4.0 only. It will not be loaded in newer versions.",
